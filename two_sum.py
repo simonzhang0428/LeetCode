@@ -36,6 +36,8 @@ if __name__ == '__main__':
     doctest.testmod()
 
 """
+% python3 two_sum.py -v
+
 Trying:
     nums = [2, 7, 11, 15]
 Expecting nothing
