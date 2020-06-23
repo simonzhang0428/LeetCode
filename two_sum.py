@@ -15,10 +15,7 @@
 
 def twoSum(nums, target):
     """
-    >>> nums = [2, 7, 11, 15]
-    >>> target = 13
-    >>> lst = twoSum(nums, target)
-    >>> print(lst)
+    >>> print(twoSum([2, 7, 11, 15], 13))
     [0, 2]
     """
     result = {}
