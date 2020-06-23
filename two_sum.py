@@ -15,9 +15,11 @@
 
 def twoSum(nums, target):
     """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
+    >>> nums = [2, 7, 11, 15]
+    >>> target = 13
+    >>> lst = twoSum(nums, target)
+    >>> print(lst)
+    [0, 2]
     """
     result = {}
     for i, num in enumerate(nums):
@@ -26,3 +28,36 @@ def twoSum(nums, target):
             result[num] = i
         else:
             return [result[remain], i]
+
+
+if __name__ == '__main__':
+    import doctest
+
+    doctest.testmod()
+
+"""
+Trying:
+    nums = [2, 7, 11, 15]
+Expecting nothing
+ok
+Trying:
+    target = 9
+Expecting nothing
+ok
+Trying:
+    lst = twoSum(nums, target)
+Expecting nothing
+ok
+Trying:
+    print(lst)
+Expecting:
+    [0, 1]
+ok
+1 items had no tests:
+    __main__
+1 items passed all tests:
+   4 tests in __main__.twoSum
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
+"""
